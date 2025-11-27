@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* MENU DE NAVEGAÇÃO */
+nav{ /*DIV PAI*/
+    background-color: lightslategray;
+    padding: 10PX;    
+}
+nav a{/*div filhos, letras*/
+    color: rgb(245, 240, 230);
+    margin: 0 25px;
+    transition: color 0.3s; /*criar animações suaves*/
+    transition: font-size 0.3s;
+    font-family: 'Courier New', Courier, monospace;
+    
+    
+}
+nav a:hover{
+    color: rgb(5, 8, 1);
+    font-size: 24px;
+    
+    /* INTRODUÇÃO */
+    }
+section{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    
+}
+
+h1{
+    color: black;
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;/*tamanho da letra*/
+    font-weight: 50px; /*letra mais grosssa*/
+    margin-bottom: 50px;/*epaço abaxo de cada paragrafo*/
+}
+
+    /* BOTAO*/
+.centro{/*div pai*/
+    text-align: center;
+    margin-top: 5px; /*espaço p cima*/
+    
+
+}
+.botao{
+    display: inline-block; /*tamanho do contedudo */
+    background-color: lightslategray;
+    border-radius: 100px;/*cantos arredondados*/
+    line-height: 50px;/* altura da linha*/
+    font-size: 60;/*tamanho da letra*/
+    box-shadow:0 0 10px rgba(0,0,0,0.9);/*cria a sombra*/
+}
+    /* LIVROS */
+.livros{
+    display: flex; /*organiza um do lado do outo*/
+    gap: 50px;/*espaço entre os livros*/
+    justify-content: center;
+    
+}
+.livros img{
+    width: 150px;/*tamanho do livro*/
+    margin-top: 50px;/*espaço p cima*/
+    border-radius: 8px; /*cantos arredondados*/
+    transform: rotate(15deg); /*inclina o livro-pesquisei*/
+    box-shadow:20px 20px 5px rgba(0,0,0,0.9);/*cria a sombra*/
+}
+/* linha */
+hr{
+   margin-top: 50px;
+   margin-bottom: 50px;
+
+}
+
+    /* ENRREDO */
+texto{
+    text-align: center;
+    margin-top: 100px;
+     margin-bottom: 10px;
+    
+}
+
+h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;/*tamanho da letra*/
+    font-weight: 50px; /*letra mais grosssa*/
+    margin-bottom: 0px;/*epaço abaxo de cada paragrafo*/
+    margin-top: 20px;
+}
+    /* LIVROS COM CAPAS */
+.capa{
+    text-align: center;
+    display: inline-block;
+    gap: 10px;/*espaço entre os livros*/
+    width: 150px; /*fica alinhado*/
+    margin:25px
+    
+    
+}
+.capa img{
+    width: 120px;/*tamanho do livro*/
+    display: block; /*texto n sobe*/
+    margin-top: 3px;/*espaço p cima*/
+    border-radius: 10px; /*cantos arredondados*/ 
+}
+.titulo{
+    font-weight: bold;
+}
+.autor{
+    color: gray;
+    font-size: 14px;
+}
+.texto02{
+    text-align: center;
+    margin-top: 50px;/*espaço p cima*/
+    
+}
+
+h3{
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;/*tamanho da letra*/
+    font-weight: 50px; /*letra mais grosssa*/
+    margin-bottom: 5px;/*epaço abaxo de cada paragrafo*/
+}
+/* ALINHAMNETO DIVS FLEX BOX */
+.container{
+    display: flex;
+    background-color:rgb(250, 249, 248);
+    gap: 20px;
+    text-align:center ;
+    
+
+}
+h4{
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: wheat;
+    
+    
+}
+.caixa1{
+    height: 150px;
+    flex: 2;
+    background-color:lightslategray;
+    box-shadow:0px 0px 5px black;
+    
+    
+}
+.caixa2{
+    height: 150px;
+    flex:2;
+    width: 150px;
+    height: 150px;
+    background-color: lightslategray;
+    box-shadow:0px 0px 5px black;
+    
+}
+.caixa3{
+    height: 150px;
+    flex:2;
+    width: 150px;
+    height: 150px;
+    background-color: lightslategray;
+    box-shadow:0px 0px 5px black;
+}
+#faq-section{
+    width:80px;
+    margin: 40px;
+}
+.faq-linha{
+    display: flex;/*alinha o conteudo*/
+    align-items: center;/*alinha verticaal*/
+    background-color: white;/*adiciona bordas e fundo branco*/
+    border-top: none;/*remove borda superior para criar o efeito da lista*/
+    padding: 15px;
+}
+.faq-linha{
+    border-top: 1px;
+}
+.faq-pergunta{
+    flex: 1;
+    margin: 0px;
+}
