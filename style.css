@@ -1,149 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
 
-/* MENU DE NAVEGAÇÃO */
+        /* ====MENU DE NAVEGAÇÃO==== */
 nav{ /*DIV PAI*/
-    background-color: lightslategray;
-    padding: 10PX;    
+    background-color: lightslategray; /*altera a cor do borda*/
+    padding: 20PX; /*altera o tamanho interno*/   
 }
-nav a{/*div filhos, letras*/
-    color: rgb(245, 240, 230);
-    margin: 0 25px;
+nav a{/*estilos dos nomes*/
+    color: rgb(245, 240, 230);/*cor das lnomes*/
+    margin: 50px;/*distancia dos nomes*/
     transition: color 0.3s; /*criar animações suaves*/
-    transition: font-size 0.3s;
-    font-family: 'Courier New', Courier, monospace;
-    
-    
+    transition: font-size 0.3s;/*duração*/
+    font-family: 'Courier New', Courier, monospace;/*font*/
 }
-nav a:hover{
+nav a:hover{ /*Estilo quando o mouse passa por cima*/
     color: rgb(5, 8, 1);
     font-size: 24px;
-    
-    /* INTRODUÇÃO */
-    }
-section{
+}
+    /*==== INTRODUÇÃO =====*/   
+Section{
     text-align: center;
-    margin-top: 100px;
-    font-size: 20px;
-    
+    margin-top: 100px; /*espaço encima*/
+    font-size: 20px;  
 }
 
-h1{
-    color: black;
+h1{ /*alinhas o titulo*/
     font-family: "Dancing Script", cursive;
     font-size: 100px;/*tamanho da letra*/
     font-weight: 50px; /*letra mais grosssa*/
-    margin-bottom: 50px;/*epaço abaxo de cada paragrafo*/
+    margin-bottom: 50px;/*epaço abaxo do paragrafo*/
 }
 
-    /* BOTAO*/
-.centro{/*div pai*/
+    /*==== BOTAO====*/
+
+.centro{/*container do botão*/
     text-align: center;
-    margin-top: 5px; /*espaço p cima*/
-    
-
+    margin-top: 5px; /*espaço encima*/
 }
-.botao{
-    display: inline-block; /*tamanho do contedudo */
+
+.botao{/*rdtilo do botão*/
+    display: inline-block; /*defininiu o tamanho e altura */
     background-color: lightslategray;
-    border-radius: 100px;/*cantos arredondados*/
-    line-height: 50px;/* altura da linha*/
+    border-radius: 100px; /*cantos arredondados*/
+    width: 300px;/* largura do botão */
+    height: 30px;/* altura do botão */
     font-size: 60;/*tamanho da letra*/
     box-shadow:0 0 10px rgba(0,0,0,0.9);/*cria a sombra*/
 }
-    /* LIVROS */
-.livros{
+
+    /*==== LIVROS==== */
+
+.livros{/*container das imagens*/
     display: flex; /*organiza um do lado do outo*/
     gap: 50px;/*espaço entre os livros*/
-    justify-content: center;
-    
+    justify-content: center;/*centralizou os livro*/   
 }
-.livros img{
+
+.livros img{/*estilo das imagens dos livros*/
     width: 150px;/*tamanho do livro*/
     margin-top: 50px;/*espaço p cima*/
     border-radius: 8px; /*cantos arredondados*/
     transform: rotate(15deg); /*inclina o livro-pesquisei*/
     box-shadow:20px 20px 5px rgba(0,0,0,0.9);/*cria a sombra*/
 }
-/* linha */
+/* ====LINHA HORIZONTAL====*/
 hr{
    margin-top: 50px;
-   margin-bottom: 50px;
-
+   margin-bottom: 20px;
 }
 
-    /* ENRREDO */
-texto{
+    /*====TEXTO 02==== */
+.texto02{
     text-align: center;
-    margin-top: 100px;
-     margin-bottom: 10px;
-    
+    margin-top: 100px;/*espaço p cima*/
+    margin-bottom: 10px; /*espaço abaixo*/
 }
-
-h2{
+h2{/*estilo do titulo*/
     font-family: "Dancing Script", cursive;
     font-size: 60px;/*tamanho da letra*/
     font-weight: 50px; /*letra mais grosssa*/
     margin-bottom: 0px;/*epaço abaxo de cada paragrafo*/
-    margin-top: 20px;
+    margin-top: 20px;/*espaço encima*/
 }
-    /* LIVROS COM CAPAS */
-.capa{
+
+    /*==== LIVROS COM CAPAS===== */
+
+.capa{ /*container de cada livro*/
     text-align: center;
-    display: inline-block;
+    display: inline-block;/*permitiu que as capas ficasse lado a lado*/
     gap: 10px;/*espaço entre os livros*/
     width: 150px; /*fica alinhado*/
-    margin:25px
-    
-    
+    margin:25px;/*espaço externos nos lados*/   
 }
-.capa img{
+.capa img{ /*imagem da capa */
     width: 120px;/*tamanho do livro*/
     display: block; /*texto n sobe*/
     margin-top: 3px;/*espaço p cima*/
     border-radius: 10px; /*cantos arredondados*/ 
 }
-.titulo{
-    font-weight: bold;
+.titulo{/*titulo do livro*/
+    font-weight: bold;/*deixa em negrito*/
 }
-.autor{
+.autor{/*nome do autor*/
     color: gray;
     font-size: 14px;
 }
-.texto02{
+
+    /* ====TEXTO03==== */
+.texto03{ /*container do texto*/
     text-align: center;
-    margin-top: 50px;/*espaço p cima*/
-    
+    margin-top: 20px;/*espaço p cima*/
+    margin-bottom: 5px;/*espaço abaxo de cada paragrafo*/
 }
 
-h3{
+h3{ /*titulo*/
     font-family: "Dancing Script", cursive;
     font-size: 55px;/*tamanho da letra*/
     font-weight: 50px; /*letra mais grosssa*/
     margin-bottom: 5px;/*epaço abaxo de cada paragrafo*/
 }
-/* ALINHAMNETO DIVS FLEX BOX */
-.container{
-    display: flex;
-    background-color:rgb(250, 249, 248);
-    gap: 20px;
-    text-align:center ;
-    
 
+    /*==== ALINHAMNETO DIVS FLEX BOX===== */
+
+.alinhamentodiv{/*container extrutura*/
+    display: flex; /*coloca elementos um do lado do outrp*/
+    background-color:rgb(250, 249, 248);
+    gap: 20px;/*espaço entre as divs*/
+    text-align: center;
 }
-h4{
+h4{/*titulo dentro das divs*/
+    text-align: center;
     font-size: 25px;
     margin-bottom: 5px;
-    color: wheat;
-    
-    
+    color: wheat;  
 }
+/* divs filhas */
 .caixa1{
-    height: 150px;
-    flex: 2;
+    height: 150px;/*define altura*/
+    flex: 2;/*ocupa em media duas partes do espaço*/
     background-color:lightslategray;
-    box-shadow:0px 0px 5px black;
-    
-    
+    box-shadow:0px 0px 5px black;/*sombra leve ao redor*/   
 }
 .caixa2{
     height: 150px;
@@ -152,7 +147,6 @@ h4{
     height: 150px;
     background-color: lightslategray;
     box-shadow:0px 0px 5px black;
-    
 }
 .caixa3{
     height: 150px;
@@ -162,21 +156,89 @@ h4{
     background-color: lightslategray;
     box-shadow:0px 0px 5px black;
 }
-#faq-section{
-    width:80px;
-    margin: 40px;
+
+        /*====SEÇÃO DA TABELA-FAQ=====*/
+
+body {/*estilo geral da pagina*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
 }
-.faq-linha{
-    display: flex;/*alinha o conteudo*/
-    align-items: center;/*alinha verticaal*/
-    background-color: white;/*adiciona bordas e fundo branco*/
-    border-top: none;/*remove borda superior para criar o efeito da lista*/
-    padding: 15px;
+
+.faq-list-container {/*div da lista de perguntas*/
+    max-width: 600px;/*largura da linha*/
+    margin: 50px auto;/*coloca no meio da tela com espaço encima*/
+    padding: 20px;/*espaço innterno*/
+    background: white; 
+    border-radius: 8px;/*cantos arreedondados*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/*sombra so p destacar*/
 }
-.faq-linha{
-    border-top: 1px;
+h2 {/*titulo */
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;/*espaço abaixo do titulo*/
 }
-.faq-pergunta{
-    flex: 1;
-    margin: 0px;
+.faq-line {/* Estilo para as Linha de Pergunta */
+    display: flex; /* Permite alinhar o texto e o ícone na mesma linha */
+    justify-content: space-between; /* Coloca o ícone no canto direito */
+    align-items: center; /* Centraliza verticalmente o texto e o ícone */
+    padding: 15px 0; /* Espaçamento interno em cima e embaixo */
+    font-size: 1.1em;
+    color: #555;
+    cursor: pointer;
+
+}
+hr{/*para linha*/
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+    
+    /*====RODAPE===*/
+.main-footer {
+    background-color: #333; /* Cor de fundo*/
+    color: white; /*cor das letras*/
+    width: 500%;/* Ocupa a largura total da tela */
+    position: relative; /* Garante que ele não flutue sobre outros elementos */
+    bottom: 0;         /* Se você usou position: fixed ou absolute, mude para relative */
+
+    /* Alinhamento e Espaçamento */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0;    /* Espaçamento interno em cima e embaixo */
+    
+    /* Remove quaisquer restrições de layout ou margens acidentais */
+    margin: 0;
+    box-sizing: border-box; 
+    /
+}
+
+
+.complex-footer {
+    background-color: #131A22; /* Cor de fundo escura (azul marinho/preto) */
+    color: #CCCCCC;           /* Texto cinza claro, para o contraste */
+    
+    /* Configurações de Layout */
+    width: 100%;             /* Ocupa a largura total */
+    text-align: center;      /* Centraliza o texto */
+    padding: 15px 0;         /* Espaçamento interno */
+    
+    /* Estilo do Texto */
+    font-size: 0.8em;        /* Fonte menor */
+    line-height: 1.6;
+    margin: 0;               /* Remove qualquer margem externa que possa ter sobrado */
+}
+
+/* Estilo para o parágrafo dentro do rodapé */
+/* Estilo para o Rodapé Principal */
+.complex-footer {
+    background-color: #131A22; /* Cor de fundo escura (azul marinho/preto) */
+    color: #CCCCCC;           /* Texto cinza claro, para o contraste */
+    
+    /* Configurações de Layout */
+    width: 100%;             /* Ocupa a largura total */
+    text-align: center;      /* Centraliza o texto */
+    padding: 15px 0;         /* Espaçamento interno */
+    
+    /* Estilo do Texto */
+    font-size: 0.8em;        /* Fonte menor */
+    line-height: 1.6;
+    margin: 0;               /* Remove qualquer margem externa que possa ter sobrado */
 }
