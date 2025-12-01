@@ -170,7 +170,7 @@ body {/*estilo geral da pagina*/
     padding: 20px;/*espaço innterno*/
     background: white; 
     border-radius: 8px;/*cantos arreedondados*/
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);/*sombra so p destacar*/
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.1);/*sombra so p destacar*/
 }
 h2 {/*titulo */
     text-align: center;
@@ -212,7 +212,7 @@ hr{/*para linha*/
 
 
 .complex-footer {
-    background-color: #131A22; /* Cor de fundo escura (azul marinho/preto) */
+    background-color: #050505; /* Cor de fundo escura (azul marinho/preto) */
     color: #CCCCCC;           /* Texto cinza claro, para o contraste */
     
     /* Configurações de Layout */
@@ -229,7 +229,7 @@ hr{/*para linha*/
 /* Estilo para o parágrafo dentro do rodapé */
 /* Estilo para o Rodapé Principal */
 .complex-footer {
-    background-color: #131A22; /* Cor de fundo escura (azul marinho/preto) */
+    background-color: #060606; /* Cor de fundo escura (azul marinho/preto) */
     color: #CCCCCC;           /* Texto cinza claro, para o contraste */
     
     /* Configurações de Layout */
