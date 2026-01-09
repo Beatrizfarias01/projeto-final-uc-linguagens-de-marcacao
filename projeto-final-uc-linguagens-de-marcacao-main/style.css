@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+        /* ====MENU DE NAVEGAÇÃO==== */
+nav{ /*DIV PAI*/
+    background-color: lightslategray; /*altera a cor do borda*/
+    padding: 20PX; /*altera o tamanho interno*/   
+}
+nav a{/*estilos dos nomes*/
+    color: rgb(245, 240, 230);/*cor das lnomes*/
+    margin: 50px;/*distancia dos nomes*/
+    transition: color 0.3s; /*criar animações suaves*/
+    transition: font-size 0.3s;/*duração*/
+    font-family: 'Courier New', Courier, monospace;/*font*/
+}
+nav a:hover{ /*Estilo quando o mouse passa por cima*/
+    color: rgb(5, 8, 1);
+    font-size: 24px;
+}
+    /*==== INTRODUÇÃO =====*/   
+Section{
+    text-align: center;
+    margin-top: 100px; /*espaço encima*/
+    font-size: 20px;  
+}
+
+h1{ /*alinhas o titulo*/
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;/*tamanho da letra*/
+    font-weight: 50px; /*letra mais grosssa*/
+    margin-bottom: 50px;/*epaço abaxo do paragrafo*/
+}
+
+    /*==== BOTAO====*/
+
+.centro{/*container do botão*/
+    text-align: center;
+    margin-top: 5px; /*espaço encima*/
+}
+
+.botao{/*rdtilo do botão*/
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: rgb(75, 86, 98);
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.botao:hover {
+  background-color: lightslategray;
+}
+
+/* Tema claro (padrão) */
+body {
+  background-color: rgba(255, 255, 255, 0.422);
+  color: black;
+  transition: background-color ;
+}
+
+/* Tema escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+    /*==== LIVROS==== */
+
+.livros {/*container das imagens*/
+    perspective: 1000px;
+    transition: transform 0.3s ease;
+    display: flex; /*organiza um do lado do outo*/
+    gap: 50px;/*espaço entre os livros*/
+    justify-content: center;/*centralizou os livro*/   
+}
+
+.livro:hover img {
+  transform: scale(1.15) rotateY(-15deg) rotateX(5deg); /* aumenta 10% */
+  box-shadow:0 20px 30px rgba (0,0,0,0.35);
+}
+
+.livros img{/*estilo das imagens dos livros*/
+    width: 150px;/*tamanho do livro*/
+    margin-top: 50px;/*espaço p cima*/
+    border-radius: 8px; /*cantos arredondados*/
+    transform: rotate(15deg); /*inclina o livro-pesquisei*/
+    box-shadow:20px 20px 5px rgba(0,0,0,0.9);/*cria a sombra*/
+}
+/* ====LINHA HORIZONTAL====*/
+hr{
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+
+    /*====TEXTO 02==== */
+.texto02{
+    text-align: center;
+    margin-top: 100px;/*espaço p cima*/
+    margin-bottom: 10px; /*espaço abaixo*/
+}
+h2{/*estilo do titulo*/
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;/*tamanho da letra*/
+    font-weight: 50px; /*letra mais grosssa*/
+    margin-bottom: 0px;/*epaço abaxo de cada paragrafo*/
+    margin-top: 20px;/*espaço encima*/
+}
+
+    /*==== LIVROS COM CAPAS===== */
+
+.capa{ /*container de cada livro*/
+    overflow:hidden;
+    border-radius:8px;
+    text-align: center;
+    display: inline-block;/*permitiu que as capas ficasse lado a lado*/
+    gap: 10px;/*espaço entre os livros*/
+    width: 150px; /*fica alinhado*/
+    margin:25px;/*espaço externos nos lados*/   
+}
+.capa img{ /*imagem da capa */
+    width: 120px;/*tamanho do livro*/
+    display: block; /*texto n sobe*/
+    margin-top: 3px;/*espaço p cima*/
+    border-radius: 10px; /*cantos arredondados*/
+    transition:transform 0.4 ease;
+}
+.capa:hover img{
+    transform: scale(1.10); 
+}
+.titulo{/*titulo do livro*/
+    font-weight: bold;/*deixa em negrito*/
+}
+.autor{/*nome do autor*/
+    color: gray;
+    font-size: 14px;
+}
+
+    /* ====TEXTO03==== */
+.texto03{ /*container do texto*/
+    text-align: center;
+    margin-top: 20px;/*espaço p cima*/
+    margin-bottom: 5px;/*espaço abaxo de cada paragrafo*/
+}
+.form-livros {
+  max-width: 2000px;
+  padding: 20px;
+  background: lightslategray;
+  color: white;
+  border-radius: 30px;
+}
+
+.form-livros label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-livros input,
+.form-livros select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form-livros button {
+  width: 100%;
+  padding: 10px;
+  background: #dedacc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#lista-livros {
+  max-width: 350px;
+  margin: 20px auto;
+  color: #000;
+}
+
+h3{ /*titulo*/
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;/*tamanho da letra*/
+    font-weight: 50px; /*letra mais grosssa*/
+    margin-bottom: 5px;/*epaço abaxo de cada paragrafo*/
+}
+
+    /*==== ALINHAMNETO DIVS FLEX BOX===== */
+
+.alinhamentodiv{/*container extrutura*/
+    
+    display: flex; /*coloca elementos um do lado do outrp*/
+    background-color:rgb(250, 249, 248);
+    gap: 20px;/*espaço entre as divs*/
+    text-align: center;
+    transition:transform 0.3s ease;
+}
+.alinhamentodiv:hover{
+      transform:scale(1.1);
+}
+h4{/*titulo dentro das divs*/
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: wheat;  
+}
+/* divs filhas */
+.caixa1{
+    height: 150px;/*define altura*/
+    flex: 2;/*ocupa em media duas partes do espaço*/
+    background-color:lightslategray;
+    box-shadow:0px 0px 5px black;/*sombra leve ao redor*/   
+}
+.caixa2{
+    height: 150px;
+    flex:2;
+    width: 150px;
+    height: 150px;
+    background-color: lightslategray;
+    box-shadow:0px 0px 5px black;
+}
+.caixa3{
+    height: 150px;
+    flex:2;
+    width: 150px;
+    height: 150px;
+    background-color: lightslategray;
+    box-shadow:0px 0px 5px black;
+}
+
+        /*====SEÇÃO DA TABELA-FAQ=====*/
+
+body {/*estilo geral da pagina*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+}
+.faq-container {
+  max-width: 10000px;
+  margin: 10px auto;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  border-bottom: 1px solid #b2a8a8;
+  padding: 10px 0;
+}
+
+.faq-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.faq-text {
+  text-align: left;
+}
+
+.faq-seta {
+  transition: transform 0.3s ease;
+}
+
+.faq-resposta {
+  padding: 20px;
+  font-size: 14px;
+  color: #4e4949;
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.faq-btn.ativo .faq-seta {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Quando abrir */
+.faq-item.ativo .faq-resposta {
+  display: block;
+}
+
+.faq-item.ativo .seta {
+  transform: rotate(180deg);
+}
+hr{/*para linha*/
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+    
+    /*====RODAPE===*/
+.rodape {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+#btn-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  display: none; /* começa escondido */
+  padding: 10px 15px;
+  background: lightslategray;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15px;
+}
+#btn-topo:hover {
+  background: lightslategray;
+}
+/* media */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* tudo em coluna */
+    align-items: center;
+  }
+
+  .card-nomes {
+    width: 90%;  /* ocupa quase toda a tela */
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biblioteca Digital</title>
+</head>
+<body>
+
+        <!-- BARRA DE NAVEGAÇÃO -->
+    <nav>
+        <a href="">DOMINIO DIGITAL</a>
+        <a href="">LIVROS GRATIS</a>
+        <a href="">CATEGORIA</a>
+        <a href="">QUEM SOMOS</a>
+        <button id="toggle-btn" type="button">🌙 Alterar Tema</button>
+
+        
+    </nav>
+
+        <!-- INTRODUÇÃO -->
+    
+    <section id="sec-intro" class="section"> 
+        <h1>Você está na Biblioteca Virtual</h1>
+        <p>Milhares de livros online exclusivos para você ler quando e onde quiser.</p>
+    </section>
+
+    <section id="sec-intro" class="centro">
+    <div id="btn-teste" class="botao">TESTE GRÁTIS POR 30 DIAS</div>
+    <p>Você clicou <span id="contador">0</span> vezes.</p>
+    </section>
+
+    </section>
+
+
+    <!-- LIVROS -->
+    <div class="livros">
+
+        <img src="imgs/imgs01.jpeg" alt="Livro01">
+        <img src="imgs/imgs02.jpeg" alt="Livro02">
+        <img src="imgs/imgs03.jpeg" alt="Livro03">
+        <img src="imgs/imgs04.jpeg" alt="Livro04">
+        <img src="imgs/imgs05.jpeg" alt="Livro05">
+        
+    </div>
+    <div class="livros">
+        <img src="imgs/imgs07.jpeg" alt="Livro07">
+        <img src="imgs/imgs08.jpeg" alt="Livro08">
+        <img src="imgs/imgs09.jpeg" alt="Livro09">
+        <img src="imgs/imgs10.jpeg" alt="Livro10">
+        <img src="imgs/imgs11.jpeg" alt="Livro11">        
+    </div>
+    <!-- Linha -->
+<hr>
+
+    <!-- TEXTO 02 -->
+    <section id="sec-intro" class="texto02"> 
+        <h2>Nós temos o que todo mundo está ouvindo</h2>
+        <p>Dos títulos mais quentes, aos clássicos mais vendidos. 
+        Agora você não precisa mais encontrar um tempo livre para ler aquela história tão esperada.</p>
+    </section>
+
+<!-- LIVROS COM TITULOS -->
+ <hr>
+    <div class=" capa">
+        <img src="imgs/imgs06.jpeg" alt="Livro06">
+        <p class="titulo"> O Cortico </p>
+        <p class="autor">Aluiso Azevedo</p>
+    </div>
+    <div class=" capa">
+        <img src="imgs/imgs12.jpeg" alt="Livro12">
+        <p class="titulo">Dom Casmurro</p>
+        <p class="autor">Vladimir Souza Carvalho</p>
+    </div>
+    <div class=" capa">
+        <img src="imgs/imgs13.jpeg" alt="Livro13">
+        <p class="titulo"> Orgulh e Preconceito</p>
+        <p class="autor">Jane Austen</p>
+    </div>
+    <div class=" capa">
+        <img src="imgs/imgs14.jpeg" alt="Livro14">
+        <p class="titulo"> The Lignthig  </p>
+        <p class="autor">Rick Riordan</p>
+    </div>
+    <div class=" capa">
+        <img src="imgs/imgs15.jpeg" alt="Livro15">
+        <p class="titulo"> Percy Jackon</p>
+        <p class="autor">Rick Riordan</p>
+    </div>
+    <div class=" capa">
+        <img src="imgs/imgs18.jpeg" alt="Livro18">
+        <p class="titulo"> O Rei Leao </p>
+        <p class="autor">Vintage</p>
+    </div>
+    <div class=" capa">
+        <img src="imgs/imgs19.jpeg" alt="Livro19">
+        <p class="titulo"> O Pequeno Principe </p>
+        <p class="autor">Atoine</p>
+    </div>
+<hr>
+    <!-- buca de livro -->
+     <h5>ESCOLHA SEU LIVRO</h5>
+<form id="form-busca">
+     <input type="text" id="campo-busca" placeholder="Digite o nome do livro">
+     <button type="submit">Buscar</button>
+</form>
+<hr>
+<!-- livros preferidos -->
+<form class="form-livros">
+  <h2>Livros Preferidos</h2>
+
+  <label>
+    Nome do livro:
+    <input type="text" id="livro" required>
+  </label>
+
+  <label>
+    Autor:
+    <input type="text" id="autor">
+  </label>
+
+  <label>
+    Gênero:
+    <select id="genero">
+      <option>Romance</option>
+      <option>Ficção</option>
+      <option>Fantasia</option>
+      <option>Drama</option>
+      <option>Terror</option>
+    </select>
+  </label>
+<button type="button" onclick="salvarLivro()">Salvar</button>
+</form>
+<ul id="lista-livros"></ul>
+<script>
+function salvarLivro() {
+  const livro = document.getElementById('livro').value;
+  const autor = document.getElementById('autor').value;
+  const genero = document.getElementById('genero').value;
+
+  if (livro === '') {
+    alert('Digite o nome do livro');
+    return;
+  }
+
+  const lista = document.getElementById('lista-livros');
+
+  const item = document.createElement('li');
+  item.innerText = `${livro} - ${autor} (${genero})`;
+
+  lista.appendChild(item);
+
+  document.getElementById('livro').value = '';
+  document.getElementById('autor').value = '';
+}
+
+</script>
+<hr>
+<p id="mensagem"></p>
+
+    <!-- TEXTO03 -->
+    <section id="sec-intro" class="texto03"> 
+        <h3>Se você ama livros, você vai amar a Biblioteca Virtual</h3>
+    </section>
+    <!-- DIVS ALINHAMNETO DIVS -->
+    <div class="alinhamentodiv">
+
+        <div class="caixa1"><H4>Transforme sua rotina com a Biblioteca</H4><i>Leia sem limite e deixe seu dia mais lindo e emocionate</i></div>
+        <div class="caixa2"><h4>Uma livraria no seu bolso</h4><i>Histórias com você o dia todo, sem peso extra.</i> </div>
+        <div class="caixa3"><h4>Encontre seu nincho literário</h4><i> Com tantos títulos disponíveis, temos um genero perfeito paracada tipo de ouvidos</i></div>
+    </div>
+
+    <!-- Seção da tabela-faq -->
+   <div class="perguntas-freqentes"> <!--- Cria uma divisão-->
+    <!--- indica que aquele texto é uma pergunta do FAQ-->
+
+<div class="faq-container">
+  <div class="faq-item">
+    <button class="faq-btn">
+      <span class="faq-text">Como funciona o período de teste grátis?</span>
+      <span class="faq-seta">^</span>
+    </button>
+    <div class="faq-resposta hidden">Você pode usar a biblioteca por 30 dias sem custo.</div>
+  </div>
+   </div>
+
+  <div class="faq-item">
+    <button class="faq-btn">
+      <span class="faq-text">O que está incluso na assinatura?</span>
+      <span class="faq-seta">^</span>
+    </button>
+    <div class="faq-resposta hidden">Acesso ilimitado a livros digitais e audiobooks.</div>
+    </div>
+    </div>
+
+  <div class="faq-item">
+    <button class="faq-btn">
+      <span class="faq-text">É preciso me comprometer por algum período de tempo?</span>
+      <span class="faq-seta">^</span>
+    </button>
+    <div class="faq-resposta hidden">Não, você pode cancelar a qualquer momento.</div>
+
+    </div>
+    <!-- rodape -->
+    <footer class="rodape">
+    &copy; 2025 SENAI
+    </footer>
+    <!--voltar ao topo  -->
+    <button id="btn-topo">Voltar ao topo</button>
+    <!--responiva p tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- conexao -->
+     
+    <script src="script.js" defer></script>
+
+   
+</body>
+</html>
